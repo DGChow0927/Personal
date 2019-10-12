@@ -439,8 +439,8 @@ footer .contact li a {
     font-size: 0.8em;
     margin: 1.1em auto;
   }
-  .selection a {
-    font-size: 1em;
+  #weblogos {
+    margin: 5em 15% 5em 15%;
   }
   .mediaContainer .galleries img {
     width: 80%;
