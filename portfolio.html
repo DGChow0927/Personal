@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/portfolio.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Sanchez&display=swap" rel="stylesheet">
+  <link rel="icon" href="./img/favicon.ico">
+  <script src="https://kit.fontawesome.com/5c84586332.js"></script>
+  <script src="./src/jquery-1.3.2.js"></script>
+  <script src="./src/jquery-glowing.js"></script>
+  <script src="./src/jquery.color.js"></script>
+  <script src="./src/effect.js"></script>
+  <title>DC-Portfolio</title>
+</head>
+<body>
+  <header>
+    <div class="head">
+      <a class="black" href="./main.html" id="home">DC</a>
+      <nav>
+        <ul>
+          <li><a class="grey" href="./resume.html">Resume</a></li>
+          <li><a id="current" class="grey" href="./portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr class="topline">
+  </header>
+<!-- insert code here- portfolio contents -->
+<!------------- Portfolio Selection ------------->
+  <div class="selection">
+    <a class="blue" href="#website">Web/Mobile</a>
+    <a class="blue" href="#print">Print</a>
+    <a class="blue" href="#digital">Digital Media</a>
+    <a class="blue" href="#personal">Personal Project</a>
+  </div>
+  <hr class="footline">
+<!------------- Website Section ------------->
+  <h2 id="website" class="title">Website/Mobile</h2>
+  <div id="weblogos">
+    <img src="./img/Ostarlogos.png" alt="Ostar" onclick="openDiv()" class="mypopup">
+    <a href="https://www.comebuytoronto.com/"  target="_blank"><img src="./img/ComeBuylogos.png" alt="ComeBuy"></a>
+    <a href="#logo"><img src="./img/Hauslogos.png" alt="Haus"></a>
+  </div>
+  <div class="popup" id="landing">
+    <div class="pop" onclick="closeDiv()">
+      <p>Click anywhere to close this pop up</p>
+      <img id="landingpage" src="./img/Ostar/Landing Page.jpg" alt="Landing Page">
+      <img id="prototype" src="./img/Ostar/IMG_0011.png" alt="Mobile Prototype">
+    </div>
+  </div>
+
+  <hr class="footline">
+<!------------- Print Section ------------->
+  <h2 id="print" class="title">Print</h2>
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="./img/Print/slideshow-Banner.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="./img/Print/slideshow-Bottles.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="./img/Print/slideshow-Flyers.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="./img/Print/slideshow-cards.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="./img/Print/slideshow-Signage.png" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- bottom row -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="./img/Print/slideshow-Banner.png" style="width:100%" onclick="currentSlide(1)" alt="Banner-Haus">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./img/Print/slideshow-Bottles.png" style="width:100%" onclick="currentSlide(2)" alt="Water Bottle Labels-North Medafix Corp.">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./img/Print/slideshow-Flyers.png" style="width:100%" onclick="currentSlide(3)" alt="Flyers-North Medafix Corp.">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./img/Print/slideshow-cards.png" style="width:100%" onclick="currentSlide(3)" alt="Business Cards">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./img/Print/slideshow-Signage.png" style="width:100%" onclick="currentSlide(3)" alt="Road Signage-North Medafix Corp.">
+      </div>
+    </div>
+  </div>
+  <hr class="footline">
+<!------------- Digital Section ------------->
+<h2 id="digital" class="title">Digital Media</h2>
+
+
+<div class="mediaContainer">
+  <div class="galleries">
+    <a href="./img/Digital/Si Couture LIVE.jpg" target="_blank"><img src="./img/Digital/Si Couture LIVE.jpg" alt="Live"></a>
+    <a href="./img/Digital/Promotion.jpg" target="_blank"><img src="./img/Digital/Promotion.jpg" alt="Promo1"></a>
+    <a href="./img/Digital/middle.jpg" target="_blank"><img src="./img/Digital/middle.jpg" alt="Giveaway"></a>
+    <a href="./img/Digital/promo2.jpg" target="_blank"><img src="./img/Digital/promo2.jpg" alt="Promo2"></a>
+    <a href="./img/Digital/shipping.jpg" target="_blank"><img src="./img/Digital/shipping.jpg" alt="Shipping"></a>
+    <a href="./img/Digital/Booklet.png" target="_blank"><img src="./img/Digital/Booklet.png" alt="Booklet"></a>
+  </div>
+</div>
+
+
+
+
+<hr class="footline">
+<!------------- Personal Section ------------->
+<h2 id="personal" class="title">Personal Project</h2>
+
+
+
+
+
+
+
+
+
+<!------------- Footer Selection ------------->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<hr class="footline">
+<footer>
+  <h2>Contact Me</h2>
+  <div class="contact">
+    <ul>
+      <li><a href="https://www.linkedin.com/in/dg-dannychow/" target="_blank"><i class="black fab fa-linkedin-in fa-3x"></i></a></li>
+      <li><a href="mailto:DGChow0927@gmail.com"><i class="black fas fa-at fa-3x"></i></a></li>
+      <li><a href="tel:+1(647)886-9278"><i class="black fas fa-mobile-alt fa-3x"></i></a></li>
+    </ul>
+  </div>
+</footer>
+<!-- slideshow -->
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+<!-- Popup -->
+<script>
+function openDiv() {
+  document.getElementById("landing").style.display = "block";
+}
+function closeDiv() {
+  document.getElementById("landing").style.display = "none";
+}
+</script>
+<!-- To the Top Button -->
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+</body>
+</html>
