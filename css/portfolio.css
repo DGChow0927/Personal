@@ -162,7 +162,8 @@ header .topline {
 
 #weblogos a img, #weblogos img {
   width: 180px;
-  padding: 1em;
+  height: 180px;
+  padding: 1rem;
   -webkit-transition: -webkit-transform 0.5s ease;
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;

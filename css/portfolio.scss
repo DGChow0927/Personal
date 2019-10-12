@@ -112,7 +112,8 @@ header{
   margin: 18em 15% 18em 15%;
   a img, img{
     width: 180px;
-    padding: 1em;
+    height: 180px;
+    padding: 1rem;
     transition: transform 0.5s ease;
   }
   a img:hover, img:hover{
