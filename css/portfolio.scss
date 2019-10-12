@@ -117,7 +117,7 @@ header{
     transition: transform 0.5s ease;
   }
   a img:hover, img:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   .mypopup{
     cursor: pointer;
@@ -148,8 +148,8 @@ header{
     }
     #landingpage{
       max-height: 80vh;
+      max-width: 100vw;
       margin: auto;
-      width: auto;
       height: auto;
     }
     #prototype{
@@ -283,7 +283,7 @@ img {
       drop-shadow(-3px 4px 3px rgba(0, 0, 0, 0.15))
     }
     img:hover{
-      transform: scale(1.3);
+      transform: scale(1.2);
     }
   }
 }
@@ -296,11 +296,11 @@ img {
 
 // ---------------------------------------------- Button and titles
 #myBtn {
-  z-index: 6;
+  z-index: 5;
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  left: 30px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -403,12 +403,7 @@ footer{
   .selection a{
     font-size: 0.8em;
   }
-
 }
-
-
-//@at-root///@at-root///@at-root//@at-root/@at-root/@at-root/@at-root/@at-root/
-
 @media (max-width: 400px){
   .selection{
     flex-direction: column;

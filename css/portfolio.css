@@ -171,8 +171,8 @@ header .topline {
 }
 
 #weblogos a img:hover, #weblogos img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #weblogos .mypopup {
@@ -211,8 +211,8 @@ header .topline {
 
 .popup .pop #landingpage {
   max-height: 80vh;
+  max-width: 100vw;
   margin: auto;
-  width: auto;
   height: auto;
 }
 
@@ -357,16 +357,16 @@ img {
 }
 
 .mediaContainer .galleries img:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #myBtn {
-  z-index: 6;
+  z-index: 5;
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  left: 30px;
   z-index: 99;
   font-size: 18px;
   border: none;
