@@ -247,6 +247,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -256,8 +257,8 @@ h3 {
 
 .mediaContainer .galleries img {
   max-height: 300px;
+  max-width: 65vw;
   height: auto;
-  width: auto;
   margin: 2em;
   -webkit-transition: ease-in 0.5s;
   transition: ease-in 0.5s;
