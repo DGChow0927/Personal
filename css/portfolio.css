@@ -7,6 +7,7 @@ body {
           animation: radialmove 3s ease infinite;
   background-size: 150% 150%;
   margin: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 html {
@@ -159,7 +160,13 @@ h3 {
 }
 
 .weblogo .weblogoss {
-  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 220px;
   margin-right: 400px;
   counter-increment: weblogoss;
 }
@@ -168,11 +175,33 @@ h3 {
   width: 160px;
   height: auto;
   padding: 1rem;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.weblogo a img:hover, .weblogo img:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.nonpublished {
+  height: auto;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .nonpublished a {
-  padding: 10px;
-  margin: 2em;
+  white-space: nowrap;
+  padding: 30px;
   font-size: 1.5em;
   font-family: 'Sanchez', serif;
   color: white;

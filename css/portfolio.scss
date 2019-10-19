@@ -6,6 +6,7 @@ body{
   animation: radialmove 3s ease infinite;
   background-size: 150% 150%;
   margin: 0;
+  -webkit-overflow-scrolling: touch;
 }
 html {scroll-behavior: smooth;}
 @keyframes radialmove {
@@ -129,7 +130,9 @@ h3{
 .weblogo{
   margin-bottom: 5em;
   .weblogoss{
-    height: 200px;
+    display: flex;
+    align-items: center;
+    height: 220px;
     margin-right: 400px;
     counter-increment: weblogoss;
   }
@@ -137,12 +140,21 @@ h3{
     width: 160px;
     height: auto;
     padding: 1rem;
+    transition: transform 0.5s ease;
+  }
+    a img:hover, img:hover{
+    transform: scale(1.4);
   }
 }
 .nonpublished{
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   a{
-    padding: 10px;
-    margin: 2em;
+    white-space: nowrap;
+    padding: 30px;
     font-size: 1.5em;
     font-family: 'Sanchez', serif;
     color: white;
