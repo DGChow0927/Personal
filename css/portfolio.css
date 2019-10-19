@@ -63,6 +63,8 @@ header {
   top: 0;
   width: calc(100% - 10em);
   z-index: 5;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
 }
 
 header .head {
@@ -148,7 +150,7 @@ header .topline {
 }
 
 h3 {
-  color: #ddd;
+  color: #aaa;
   font-weight: 100;
 }
 

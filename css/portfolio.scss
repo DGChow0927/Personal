@@ -25,6 +25,7 @@ header{
   top: 0;
   width: calc(100% - 10em);
   z-index: 5;
+  transition: top 0.3s;
   .head{
     margin-top: 15px;
     padding: .5em 1em;
@@ -107,7 +108,7 @@ header{
 }
 // ----------------------- Website Section
 h3{
-  color: #ddd;
+  color: #aaa;
   font-weight: 100;
 }
 // #weblogos{

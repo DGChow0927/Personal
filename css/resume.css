@@ -39,6 +39,8 @@ header {
           transform: translate(-50%, 0);
   top: 0;
   width: calc(100% - 10em);
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
 }
 
 header .head {

@@ -17,7 +17,7 @@
   <title>DC-Portfolio</title>
 </head>
 <body>
-  <header>
+  <header id="navbar">
     <div class="head">
       <a class="black" href="./main.html" id="home">DC</a>
       <nav>
@@ -41,7 +41,7 @@
 <!------------- Website Section ------------->
   <h2 id="website" class="title">Website/Mobile</h2>
 
-  <h3>Here are/were published sites that I made</h3>
+  <h3>Here are published sites</h3>
 <!-- 
   <div id="weblogos">
     <img src="./img/Ostarlogos.png" alt="Ostar" onclick="openDiv()" class="mypopup">
@@ -50,8 +50,6 @@
   </div> -->
 
 
-  
-  
   <div class="weblogo gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
     <div class="gallery-cell weblogoss">
         <img src="./img/Ostarlogos.png" alt="Ostar" onclick="openDiv()" class="mypopup">
@@ -65,8 +63,6 @@
   </div>
 
 
-
-
   <div class="popup" id="landing">
     <div class="pop" onclick="closeDiv()">
       <p>Click anywhere to close this pop up</p>
@@ -75,10 +71,10 @@
     </div>
   </div>
 
-  <h3>Here are projects that I made <br>(still constructing...)</h3>
+  <h3>Here are non published projects<br>(still constructing...)</h3>
 
-  <a href="#bootcamp">Bootcamp Homepage</a>
-  <a href="#restaurents">Restaurent Homepage</a>
+  <a href="#bootcamp">Bootcamp</a>
+  <a href="#restaurents">Restaurent</a>
   <a href="#landing">Landing Page</a>
 
   <hr class="footline">
@@ -228,20 +224,27 @@ function closeDiv() {
   document.getElementById("landing").style.display = "none";
 }
 </script>
-<!-- To the Top Button -->
+
+
+<!-- To the Top Button && Hide Nav bar-->
 <script>
   //Get the button
   var mybutton = document.getElementById("myBtn");
-  
+  var prevScrollpos = window.pageYOffset;
   // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  window.onscroll = function() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       mybutton.style.display = "block";
     } else {
       mybutton.style.display = "none";
     }
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-90px";
+      }
+      prevScrollpos = currentScrollPos;
   }
   
   // When the user clicks on the button, scroll to the top of the document
@@ -250,6 +253,5 @@ function closeDiv() {
     document.documentElement.scrollTop = 0;
   }
 </script>
-
 </body>
 </html>

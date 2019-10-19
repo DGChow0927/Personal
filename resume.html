@@ -15,7 +15,7 @@
   <title>DC-Resume</title>
 </head>
 <body>
-  <header>
+  <header id="navbar">
     <div class="head">
       <a class="grey" href="./main.html" id="home">DC</a>
       <nav>
@@ -112,5 +112,18 @@
       </ul>
     </div>
   </footer>
+  <!-- Hide NavBar -->
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-90px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
 </body>
 </html>

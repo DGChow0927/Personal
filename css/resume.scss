@@ -18,6 +18,7 @@ header{
   transform: translate(-50%, 0);
   top: 0;
   width: calc(100% - 10em);
+  transition: top 0.3s;
   .head{
     margin-top: 15px;
     padding: .5em 1em;
