@@ -215,6 +215,30 @@ h3 {
   -webkit-text-stroke: 0px #666a9b;
 }
 
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 0px;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid #333;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: #aaa;
+}
+
 .popup {
   z-index: 7;
   display: none;
@@ -277,6 +301,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 10%;
 }
 
 .slideshoww .slides img {
