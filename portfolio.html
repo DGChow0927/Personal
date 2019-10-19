@@ -58,7 +58,7 @@
         <a href="https://www.comebuytoronto.com/"  target="_blank"><img src="./img/ComeBuylogos.png" alt="ComeBuy"></a>
     </div>
     <div class="gallery-cell weblogoss">
-        <a href="#logo"><img src="./img/Hauslogos.png" alt="Haus"></a>
+        <a href="http://www.myhaus.co/"><img src="./img/Hauslogos.png" alt="Haus"></a>
     </div>
   </div>
 
@@ -241,7 +241,7 @@ function closeDiv() {
       mybutton.style.display = "none";
     }
     var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
+      if (prevScrollpos > currentScrollPos || currentScrollPos == 0) {
         document.getElementById("navbar").style.top = "0";
       } else {
         document.getElementById("navbar").style.top = "-90px";

@@ -191,11 +191,18 @@ h3{
 .flickity-prev-next-button .arrow {
   fill: #aaa;
 }
-
-
-
-
-
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: 200px;
+}
+.flickity-prev-next-button.next {
+  right: 200px;
+}
+.flickity-prev-next-button {
+  width: 30px;
+  height: 60px;
+  border-radius: 5px;
+}
 
 
 .popup{
