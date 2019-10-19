@@ -11,10 +11,6 @@ body{
   50%{background-position:70% 50%}
   100%{background-position:30% 50%}
 }
-@keyframes slides{
-  0%  {transform: translateX(0%) };
-  100%  {transform: TranslateX(100%)};
-}
 // ---------------------------------------------- Navigation
 header{
   position: fixed;
@@ -75,10 +71,7 @@ header{
   }
 }
 // ---------------------------------------------- Experience
-.title{
-  margin: 5em auto 2em auto;
-  color: #666;
-}
+.title{  margin: 5em auto 2em auto;  color: #666;  }
 .sicouture{  background-image: url("../img/Sicouturelogos.png");}
 .north{  background-image: url("../img/NMClogos.png");}
 .comebuy{  background-image: url("../img/ComeBuylogos.png");}
@@ -90,35 +83,30 @@ header{
   background-position: 70% 50%;
   margin: 0 auto 3em auto;
   width: 600px;
-  transition: ease-in 0.5s;
+  transition: ease-in-out 0.2s;
+  text-align: left;
   .allinone{
     width: 500px;
+    height: auto;
     background-color: rgba(255, 255, 255, 1);
     padding: 1em;
     border-radius: 10px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
-    transition: width 1s;
     display: flex;
-    .textonly{
-      text-align: left;
-    }
   }
 }
 .wrapper:hover{
   background-position: 100% 50%;
 }
-
-
 h3, h4, h5, p{  margin: 0;}
 h3{
   font-weight: 500;
   margin-bottom: 7px;
   font-size: 1.6em;
   color: rgba(20, 43, 75, 0.55);
-  //-webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.5);
-  //filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.35))
+  filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.15))
 }
 h4{color: rgb(20, 43, 78);font-weight: 500;font-size: 1.2em;  margin-bottom: 2px;}
 h5{color: rgb(102, 106, 155);font-weight: 400;font-size: 1.1em ;margin-bottom: 7px;}

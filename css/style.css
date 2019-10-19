@@ -8,28 +8,6 @@ body {
   background-size: 150% 150%;
 }
 
-@-webkit-keyframes slideInFromLeft {
-  0% {
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
 @-webkit-keyframes radialmove {
   0% {
     background-position: 30% 50%;
@@ -57,9 +35,9 @@ body {
 header {
   position: fixed;
   left: 50%;
+  top: 0;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  top: 0;
   width: calc(100% - 10em);
 }
 
@@ -121,14 +99,16 @@ header .topline {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-header .intro {
+.intro {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 580px;
-  margin: 20em auto 0 auto;
-  -webkit-animation: 0.5s ease 0s 1 slideInFromLeft;
-          animation: 0.5s ease 0s 1 slideInFromLeft;
 }
 
-header .intro h1 {
+.intro h1 {
   color: rgba(255, 255, 255, 0.3);
   -webkit-text-stroke: 1.5px white;
   font-size: 5.8em;
@@ -140,7 +120,7 @@ header .intro h1 {
           filter: drop-shadow(1px 1px 1px rgba(20, 43, 78, 0.45)) drop-shadow(2px 2px 0px rgba(20, 43, 78, 0.6));
 }
 
-header .intro p {
+.intro p {
   width: 540px;
   font-weight: 300;
   font-size: 1.2em;
@@ -150,6 +130,7 @@ header .intro p {
 .footline {
   width: calc(100% - 18em);
   margin-top: 65em;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 footer h2 {
@@ -188,14 +169,13 @@ footer .contact li a {
   header .head nav ul {
     font-size: 1em;
   }
-  header .intro {
+  .intro {
     width: 450px;
-    margin-top: 18em;
   }
-  header .intro h1 {
+  .intro h1 {
     font-size: 4.1em;
   }
-  header .intro p {
+  .intro p {
     width: 400px;
     font-weight: 300;
     font-size: 0.8em;
@@ -213,14 +193,13 @@ footer .contact li a {
   header .head nav ul {
     font-size: 0.8em;
   }
-  header .intro {
+  .intro {
     width: 250px;
-    margin-top: 11em;
   }
-  header .intro h1 {
+  .intro h1 {
     font-size: 2.2em;
   }
-  header .intro p {
+  .intro p {
     width: 200px;
     font-size: 0.6em;
   }

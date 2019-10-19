@@ -12,6 +12,8 @@
   <script src="./src/jquery-glowing.js"></script>
   <script src="./src/jquery.color.js"></script>
   <script src="./src/effect.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <title>DC-Portfolio</title>
 </head>
 <body>
@@ -38,11 +40,33 @@
   <hr class="footline">
 <!------------- Website Section ------------->
   <h2 id="website" class="title">Website/Mobile</h2>
+
+  <h3>Here are/were published sites that I made</h3>
+<!-- 
   <div id="weblogos">
     <img src="./img/Ostarlogos.png" alt="Ostar" onclick="openDiv()" class="mypopup">
     <a href="https://www.comebuytoronto.com/"  target="_blank"><img src="./img/ComeBuylogos.png" alt="ComeBuy"></a>
     <a href="#logo"><img src="./img/Hauslogos.png" alt="Haus"></a>
+  </div> -->
+
+
+  
+  
+  <div class="weblogo gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+    <div class="gallery-cell weblogoss">
+        <img src="./img/Ostarlogos.png" alt="Ostar" onclick="openDiv()" class="mypopup">
+    </div>
+    <div class="gallery-cell weblogoss">
+        <a href="https://www.comebuytoronto.com/"  target="_blank"><img src="./img/ComeBuylogos.png" alt="ComeBuy"></a>
+    </div>
+    <div class="gallery-cell weblogoss">
+        <a href="#logo"><img src="./img/Hauslogos.png" alt="Haus"></a>
+    </div>
   </div>
+
+
+
+
   <div class="popup" id="landing">
     <div class="pop" onclick="closeDiv()">
       <p>Click anywhere to close this pop up</p>
@@ -51,10 +75,17 @@
     </div>
   </div>
 
+  <h3>Here are projects that I made <br>(still constructing...)</h3>
+
+  <a href="#bootcamp">Bootcamp Homepage</a>
+  <a href="#restaurents">Restaurent Homepage</a>
+  <a href="#landing">Landing Page</a>
+
   <hr class="footline">
 <!------------- Print Section ------------->
   <h2 id="print" class="title">Print</h2>
-  <div class="container">
+
+  <!-- <div class="container">
     <div class="mySlides">
       <div class="numbertext">1 / 5</div>
       <img src="./img/Print/slideshow-Banner.png" style="width:100%">
@@ -79,9 +110,11 @@
     <a class="next" onclick="plusSlides(1)">❯</a>
     <div class="caption-container">
       <p id="caption"></p>
-    </div>
+    </div> -->
+
     <!-- bottom row -->
-    <div class="row">
+
+    <!-- <div class="row">
       <div class="column">
         <img class="demo cursor" src="./img/Print/slideshow-Banner.png" style="width:100%" onclick="currentSlide(1)" alt="Banner-Haus">
       </div>
@@ -98,12 +131,28 @@
         <img class="demo cursor" src="./img/Print/slideshow-Signage.png" style="width:100%" onclick="currentSlide(5)" alt="Road Signage-North Medafix Corp.">
       </div>
     </div>
+  </div> -->
+
+  <div class="slideshoww gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+      <div class="gallery-cell slides">
+          <img src="./img/Print/slideshow-Banner.png" style="width:100%">
+      </div>
+      <div class="gallery-cell slides">
+          <img src="./img/Print/slideshow-Bottles.png" style="width:100%">
+      </div>
+      <div class="gallery-cell slides">
+          <img src="./img/Print/slideshow-Flyers.png" style="width:100%">
+      </div>
+      <div class="gallery-cell slides">
+          <img src="./img/Print/slideshow-Cards.png" style="width:100%">
+      </div>
+      <div class="gallery-cell slides">
+          <img src="./img/Print/slideshow-Signage.png" style="width:100%">
+      </div>
   </div>
   <hr class="footline">
 <!------------- Digital Section ------------->
 <h2 id="digital" class="title">Digital Media</h2>
-
-
 <div class="mediaContainer">
   <div class="galleries">
     <a href="./img/Digital/Si Couture LIVE.jpg" target="_blank"><img src="./img/Digital/Si Couture LIVE.jpg" alt="Live"></a>
@@ -114,10 +163,6 @@
     <a href="./img/Digital/Booklet.png" target="_blank"><img src="./img/Digital/Booklet.png" alt="Booklet"></a>
   </div>
 </div>
-
-
-
-
 <hr class="footline">
 <!------------- Personal Section ------------->
 <h2 id="personal" class="title">Personal Project</h2>
@@ -144,7 +189,7 @@
   </div>
 </footer>
 <!-- slideshow -->
-<script>
+<!-- <script>
     var slideIndex = 1;
     showSlides(slideIndex);
     
@@ -173,7 +218,7 @@
       dots[slideIndex-1].className += " active";
       captionText.innerHTML = dots[slideIndex-1].alt;
     }
-    </script>
+    </script> -->
 <!-- Popup -->
 <script>
 function openDiv() {

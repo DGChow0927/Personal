@@ -6,10 +6,6 @@ body{
   animation: radialmove 3s ease infinite;
   background-size: 150% 150%;
 }
-@keyframes slideInFromLeft {
-  0% {  transform: translateY(20%);}
-  100% {  transform: translateY(0);}
-}
 @keyframes radialmove {
   0%{background-position:30% 50%}
   50%{background-position:70% 50%}
@@ -20,8 +16,8 @@ body{
 header{
   position: fixed;
   left: 50%;
-  transform: translate(-50%, 0);
   top: 0;
+  transform: translate(-50%, 0);
   width: calc(100% - 10em);
   .head{
     margin-top: 15px;
@@ -74,34 +70,37 @@ header{
   .topline{
     border-top: 1px solid  rgba(0, 0, 0, 0.15);
   }
+}
   // ---------------------------------------------- Title + Paragraph
-  .intro{
-    width: 580px;
-    margin: 20em auto 0 auto;
-    animation: 0.5s ease 0s 1 slideInFromLeft;
-    h1{
-      color: rgba(255, 255, 255, 0.3);
-      -webkit-text-stroke: 1.5px white;
-      font-size: 5.8em;
-      font-weight: 500;
-      font-family: 'Sanchez', serif;
-      margin-top: 0;
-      margin-bottom: 10px;
-      filter: drop-shadow(1px 1px 1px rgba(20, 43, 78, 0.45))
-              drop-shadow(2px 2px 0px rgba(20, 43, 78, 0.6));
-    }
-    p{
-      width: 540px;
-      font-weight: 300;
-      font-size: 1.2em;
-      margin: 1.1em auto;
-    }
+.intro{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 580px;
+  h1{
+    color: rgba(255, 255, 255, 0.3);
+    -webkit-text-stroke: 1.5px white;
+    font-size: 5.8em;
+    font-weight: 500;
+    font-family: 'Sanchez', serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+    filter: drop-shadow(1px 1px 1px rgba(20, 43, 78, 0.45))
+            drop-shadow(2px 2px 0px rgba(20, 43, 78, 0.6));
+  }
+  p{
+    width: 540px;
+    font-weight: 300;
+    font-size: 1.2em;
+    margin: 1.1em auto;
   }
 }
 // ---------------------------------------------- Footer
 .footline{
   width: calc(100% - 18em);
   margin-top: 65em;
+  border-top: 1px solid  rgba(0, 0, 0, 0.15);
 }
 footer{
   h2{
@@ -138,16 +137,15 @@ footer{
       #home{  font-size: 1.7em;}
       nav ul {  font-size: 1em;}
     }
-    .intro{
-      width: 450px;
-      margin-top: 18em;
-      h1{  font-size: 4.1em;}
-      p{
-        width: 400px;
-        font-weight: 300;
-        font-size: 0.8em;
-        margin: 1.1em auto;
-      }
+  }
+  .intro{
+    width: 450px;
+    h1{  font-size: 4.1em;}
+    p{
+      width: 400px;
+      font-weight: 300;
+      font-size: 0.8em;
+      margin: 1.1em auto;
     }
   }
 }
@@ -158,14 +156,13 @@ footer{
       #home{  font-size: 1.4em;}
       nav ul {  font-size: 0.8em;}
     }
-    .intro{
-      width: 250px;
-      margin-top: 11em;
-      h1{  font-size: 2.2em;}
-      p{
-        width: 200px;
-        font-size: 0.6em;
-      }
+  }
+  .intro{
+    width: 250px;
+    h1{  font-size: 2.2em;}
+    p{
+      width: 200px;
+      font-size: 0.6em;
     }
   }
 }
