@@ -63,8 +63,8 @@ header {
   top: 0;
   width: calc(100% - 10em);
   z-index: 5;
-  -webkit-transition: top 0.3s;
-  transition: top 0.3s;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
 }
 
 header .head {
@@ -168,6 +168,22 @@ h3 {
   width: 160px;
   height: auto;
   padding: 1rem;
+}
+
+.nonpublished a {
+  padding: 10px;
+  margin: 2em;
+  font-size: 1.5em;
+  font-family: 'Sanchez', serif;
+  color: white;
+  text-decoration: none;
+  -webkit-text-stroke: 0.5px white;
+  -webkit-filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15)) drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15)) drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15)) drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15)) drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15)) drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15)) drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
+}
+
+.nonpublished a:hover, .nonpublished a:active {
+  -webkit-text-stroke: 0px #666a9b;
 }
 
 .popup {
