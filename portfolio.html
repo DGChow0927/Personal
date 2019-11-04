@@ -40,16 +40,7 @@
   <hr class="footline">
 <!------------- Website Section ------------->
   <h2 id="website" class="title">Website/Mobile</h2>
-
   <h3>Here are commercial sites</h3>
-<!-- 
-  <div id="weblogos">
-    <img src="./img/Ostarlogos.png" alt="Ostar" onclick="openDiv()" class="mypopup">
-    <a href="https://www.comebuytoronto.com/"  target="_blank"><img src="./img/ComeBuylogos.png" alt="ComeBuy"></a>
-    <a href="#logo"><img src="./img/Hauslogos.png" alt="Haus"></a>
-  </div> -->
-
-
   <div class="weblogo gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true, "draggable": false }'>
     <div class="gallery-cell weblogoss">
         <img src="./img/Ostarlogos.png" alt="Ostar" onclick="openDiv()" class="mypopup">
@@ -61,8 +52,6 @@
         <a href="http://www.myhaus.co/"><img src="./img/Hauslogos.png" alt="Haus"></a>
     </div>
   </div>
-
-
   <div class="popup" id="landing">
     <div class="pop" onclick="closeDiv()">
       <p>Click anywhere to close this pop up</p>
@@ -70,67 +59,15 @@
       <img id="prototype" src="./img/Ostar/IMG_0011.png" alt="Mobile Prototype">
     </div>
   </div>
-
   <h3>Here are personal projects<br>(Under Construction...)</h3>
-
   <div class="nonpublished">
     <a class="blue" href="#bootcamp">Bootcamp</a>
     <a class="blue" href="#restaurents">Restaurent</a>
     <a class="blue" href="#landing">Landing Page</a>
   </div>
-
   <hr class="footline">
 <!------------- Print Section ------------->
   <h2 id="print" class="title">Print</h2>
-
-  <!-- <div class="container">
-    <div class="mySlides">
-      <div class="numbertext">1 / 5</div>
-      <img src="./img/Print/slideshow-Banner.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">2 / 5</div>
-      <img src="./img/Print/slideshow-Bottles.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">3 / 5</div>
-      <img src="./img/Print/slideshow-Flyers.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">4 / 5</div>
-      <img src="./img/Print/slideshow-Cards.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">5 / 5</div>
-      <img src="./img/Print/slideshow-Signage.png" style="width:100%">
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div> -->
-
-    <!-- bottom row -->
-
-    <!-- <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="./img/Print/slideshow-Banner.png" style="width:100%" onclick="currentSlide(1)" alt="Banner-Haus">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="./img/Print/slideshow-Bottles.png" style="width:100%" onclick="currentSlide(2)" alt="Water Bottle Labels-North Medafix Corp.">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="./img/Print/slideshow-Flyers.png" style="width:100%" onclick="currentSlide(3)" alt="Flyers-North Medafix Corp.">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="./img/Print/slideshow-Cards.png" style="width:100%" onclick="currentSlide(4)" alt="Business Cards">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="./img/Print/slideshow-Signage.png" style="width:100%" onclick="currentSlide(5)" alt="Road Signage-North Medafix Corp.">
-      </div>
-    </div>
-  </div> -->
-
   <div class="slideshoww gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true, "draggable": false }'>
       <div class="gallery-cell slides">
           <img src="./img/Print/slideshow-Banner.png" style="width:100%">
@@ -186,37 +123,6 @@
     </ul>
   </div>
 </footer>
-<!-- slideshow -->
-<!-- <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      var captionText = document.getElementById("caption");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      captionText.innerHTML = dots[slideIndex-1].alt;
-    }
-    </script> -->
 <!-- Popup -->
 <script>
 function openDiv() {
@@ -226,8 +132,6 @@ function closeDiv() {
   document.getElementById("landing").style.display = "none";
 }
 </script>
-
-
 <!-- To the Top Button && Hide Nav bar-->
 <script>
   //Get the button
@@ -240,6 +144,7 @@ function closeDiv() {
     } else {
       mybutton.style.display = "none";
     }
+    // NavBar hide on scroll
     var currentScrollPos = window.pageYOffset;
       if (prevScrollpos > currentScrollPos || currentScrollPos == 0) {
         document.getElementById("navbar").style.top = "0";
@@ -248,7 +153,6 @@ function closeDiv() {
       }
       prevScrollpos = currentScrollPos;
   }
-  
   // When the user clicks on the button, scroll to the top of the document
   function topFunction() {
     document.body.scrollTop = 0;
