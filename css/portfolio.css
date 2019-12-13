@@ -1,6 +1,6 @@
 body {
   background-image: radial-gradient(white 15%, #f0f0f0 40%, #aaaaaa 100%);
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   text-align: center;
   background-attachment: fixed;
   -webkit-animation: radialmove 3s ease infinite;
@@ -70,7 +70,7 @@ header {
 
 header .head {
   margin-top: 15px;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   z-index: 20;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,7 +86,7 @@ header .head #home {
   margin-left: 1em;
   font-size: 1.9em;
   font-weight: 800;
-  font-family: 'Sanchez', serif;
+  font-family: "Sanchez", serif;
   color: white;
   -webkit-filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.15)) drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25)) drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.2)) drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.25)) drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.15)) drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25)) drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.2)) drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.25)) drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));
@@ -106,19 +106,20 @@ header .head nav ul {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header .head nav ul li a {
   padding: 10px;
-  font-family: 'Sanchez', serif;
+  font-family: "Sanchez", serif;
   -webkit-text-stroke: 0.5px white;
   color: white;
   -webkit-filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.15)) drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25)) drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.05)) drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.15)) drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25)) drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.05)) drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));
 }
 
-header .head nav ul li a:hover, header .head nav ul li a:active {
+header .head nav ul li a:hover,
+header .head nav ul li a:active {
   -webkit-text-stroke: 0px #887272;
 }
 
@@ -139,14 +140,15 @@ header .topline {
   padding: 10px;
   margin: 10px;
   font-size: 1.5em;
-  font-family: 'Sanchez', serif;
+  font-family: "Sanchez", serif;
   -webkit-text-stroke: 0.5px white;
   color: white;
   -webkit-filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15)) drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15)) drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15)) drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15)) drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15)) drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15)) drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
 }
 
-.selection a:hover, .selection a:active {
+.selection a:hover,
+.selection a:active {
   -webkit-text-stroke: 0px #666a9b;
 }
 
@@ -171,7 +173,8 @@ h3 {
   counter-increment: weblogoss;
 }
 
-.weblogo a img, .weblogo img {
+.weblogo a img,
+.weblogo img {
   width: 160px;
   height: auto;
   padding: 1rem;
@@ -181,7 +184,8 @@ h3 {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
-.weblogo a img:hover, .weblogo img:hover {
+.weblogo a img:hover,
+.weblogo img:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
@@ -203,7 +207,7 @@ h3 {
   white-space: nowrap;
   padding: 30px;
   font-size: 1.5em;
-  font-family: 'Sanchez', serif;
+  font-family: "Sanchez", serif;
   color: white;
   text-decoration: none;
   -webkit-text-stroke: 0.5px white;
@@ -211,7 +215,8 @@ h3 {
           filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15)) drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15)) drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15)) drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
 }
 
-.nonpublished a:hover, .nonpublished a:active {
+.nonpublished a:hover,
+.nonpublished a:active {
   -webkit-text-stroke: 0px #666a9b;
 }
 
@@ -306,7 +311,7 @@ h3 {
 
 .slideshoww .slides {
   width: 80vw;
-  height: 80vh;
+  min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,12 +407,12 @@ footer .contact ul {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 5px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer .contact li a {
   padding: 2em;
-  font-family: 'Sanchez', serif;
+  font-family: "Sanchez", serif;
   -webkit-text-stroke: 2px rgba(105, 105, 105, 0.11);
   color: white;
   -webkit-filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.15)) drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25)) drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.05)) drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));

@@ -1,25 +1,41 @@
-body{
-  background-image: radial-gradient(white 15%, rgb(240, 240, 240) 40%, rgb(170, 170, 170) 100%);
-  font-family: 'Rubik', sans-serif;
+body {
+  background-image: radial-gradient(
+    white 15%,
+    rgb(240, 240, 240) 40%,
+    rgb(170, 170, 170) 100%
+  );
+  font-family: "Rubik", sans-serif;
   text-align: center;
-  background-attachment:fixed; 
+  background-attachment: fixed;
   animation: radialmove 3s ease infinite;
   background-size: 150% 150%;
   margin: 0;
   -webkit-overflow-scrolling: touch;
 }
-html {scroll-behavior: smooth;}
+html {
+  scroll-behavior: smooth;
+}
 @keyframes radialmove {
-  0%{background-position:30% 50%}
-  50%{background-position:70% 50%}
-  100%{background-position:30% 50%}
+  0% {
+    background-position: 30% 50%;
+  }
+  50% {
+    background-position: 70% 50%;
+  }
+  100% {
+    background-position: 30% 50%;
+  }
 }
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 // ---------------------------------------------- Navigation
-header{
+header {
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
@@ -27,25 +43,25 @@ header{
   width: calc(100% - 10em);
   z-index: 5;
   transition: top 0.5s;
-  .head{
+  .head {
     margin-top: 15px;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     z-index: 20;
-    display: flex;  
+    display: flex;
     justify-content: space-between;
     background-color: rgba(210, 210, 210, 0.8);
     border-radius: 20px;
-    #home{
+    #home {
       margin-left: 1em;
       font-size: 1.9em;
       font-weight: 800;
-      font-family: 'Sanchez', serif;
+      font-family: "Sanchez", serif;
       color: white;
       filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.15))
-      drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25))
-      drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.2))
-      drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.25))
-      drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));
+        drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25))
+        drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.2))
+        drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.25))
+        drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));
     }
     a {
       text-decoration: none;
@@ -58,98 +74,103 @@ header{
       width: 100%;
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      li a{
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      li a {
         padding: 10px;
-        font-family: 'Sanchez', serif;
+        font-family: "Sanchez", serif;
         -webkit-text-stroke: 0.5px rgba(255, 255, 255, 1);
         color: white;
         filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.15))
-        drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25))
-        drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1))
-        drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.05))
-        drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));
+          drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25))
+          drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1))
+          drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.05))
+          drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));
       }
-      li a:hover, li a:active{
+      li a:hover,
+      li a:active {
         -webkit-text-stroke: 0px rgb(136, 114, 114);
       }
     }
   }
-  .topline{
-    border-top: 1px solid  rgba(0, 0, 0, 0.15);
+  .topline {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
 // ---------------------------------------------- Portfolio
 // ----------------------- Portfolio Selection
-.selection{
+.selection {
   margin: 8em 10% 0 10%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  a{
+  a {
     text-decoration: none;
     padding: 10px;
     margin: 10px;
     font-size: 1.5em;
-    font-family: 'Sanchez', serif;
+    font-family: "Sanchez", serif;
     -webkit-text-stroke: 0.5px rgba(255, 255, 255, 1);
     color: white;
     filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2))
-    drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.10))
-    drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15))
-    drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15))
-    drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15))
-    drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
+      drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.1))
+      drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15))
+      drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15))
+      drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15))
+      drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
   }
-  a:hover, a:active{
+  a:hover,
+  a:active {
     -webkit-text-stroke: 0px rgb(102, 106, 155);
   }
 }
 // ----------------------- Website Section
-h3{
+h3 {
   color: #aaa;
   font-weight: 100;
 }
-.weblogo{
+.weblogo {
   margin-bottom: 5em;
-  .weblogoss{
+  .weblogoss {
     display: flex;
     align-items: center;
     height: 220px;
     margin-right: 400px;
     counter-increment: weblogoss;
   }
-    a img, img{
+  a img,
+  img {
     width: 160px;
     height: auto;
     padding: 1rem;
     transition: transform 0.5s ease;
   }
-    a img:hover, img:hover{
+  a img:hover,
+  img:hover {
     transform: scale(1.4);
   }
 }
-.nonpublished{
+.nonpublished {
   height: auto;
   width: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  a{
+  a {
     white-space: nowrap;
     padding: 30px;
     font-size: 1.5em;
-    font-family: 'Sanchez', serif;
+    font-family: "Sanchez", serif;
     color: white;
     text-decoration: none;
     -webkit-text-stroke: 0.5px rgba(255, 255, 255, 1);
     filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2))
-    drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.10))
-    drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15))
-    drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15))
-    drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15))
-    drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
+      drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.1))
+      drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15))
+      drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15))
+      drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15))
+      drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
   }
-  a:hover, a:active{
+  a:hover,
+  a:active {
     -webkit-text-stroke: 0px rgb(102, 106, 155);
   }
 }
@@ -186,8 +207,7 @@ h3{
   border-radius: 5px;
 }
 
-
-.popup{
+.popup {
   z-index: 7;
   display: none;
   position: fixed;
@@ -195,89 +215,84 @@ h3{
   transform: translate(-50%, -46%);
   top: 50%;
   filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2))
-  drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.10))
-  drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15))
-  drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15))
-  drop-shadow(-3px 4px 3px rgba(0, 0, 0, 0.15))
-  drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
-  .pop{
+    drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15))
+    drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15))
+    drop-shadow(-3px 4px 3px rgba(0, 0, 0, 0.15))
+    drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
+  .pop {
     background-color: rgba(20, 43, 78, 0.95);
     width: 100vw;
     padding: 2em;
     position: relative;
     display: flex;
     flex-direction: column;
-    p{
+    p {
       color: white;
     }
-    #landingpage{
+    #landingpage {
       max-height: 80vh;
       max-width: 100vw;
       margin: auto;
       height: auto;
     }
-    #prototype{
-      width:32%;
+    #prototype {
+      width: 32%;
       position: absolute;
       right: 0;
       bottom: 0;
       filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2))
-      drop-shadow(-2px 0px 1px rgba(0, 0, 0, 0.10))
-      drop-shadow(-1px 0px 1px rgba(0, 0, 0, 0.15))
-      drop-shadow(6px 0px 3px rgba(0, 0, 0, 0.15))
-      drop-shadow(-3px 0px 3px rgba(0, 0, 0, 0.15))
-      drop-shadow(-4px 0px 1px rgba(0, 0, 0, 0.15));
+        drop-shadow(-2px 0px 1px rgba(0, 0, 0, 0.1))
+        drop-shadow(-1px 0px 1px rgba(0, 0, 0, 0.15))
+        drop-shadow(6px 0px 3px rgba(0, 0, 0, 0.15))
+        drop-shadow(-3px 0px 3px rgba(0, 0, 0, 0.15))
+        drop-shadow(-4px 0px 1px rgba(0, 0, 0, 0.15));
     }
   }
 }
-.slideshoww{
+.slideshoww {
   margin-bottom: 5em;
-  .slides{
+  .slides {
     width: 80vw;
-    height: 80vh;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10%;
-    img{
+    img {
       max-width: 100%;
       max-height: 100%;
     }
   }
 }
-// ----------------------- Digital Section
-.mediaContainer{
+// ----------------------- Digital Media Section
+.mediaContainer {
   position: relative;
   width: 70vw;
   margin: auto;
-  .galleries{
+  .galleries {
     display: flex;
     position: relative;
     justify-content: center;
     flex-wrap: wrap;
-    img{
+    img {
       max-height: 300px;
       max-width: 65vw;
       height: auto;
       margin: 2em;
       transition: ease-in 0.5s;
       filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2))
-      drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.10))
-      drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15))
-      drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15))
-      drop-shadow(-3px 4px 3px rgba(0, 0, 0, 0.15))
+        drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.1))
+        drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15))
+        drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.15))
+        drop-shadow(-3px 4px 3px rgba(0, 0, 0, 0.15));
     }
-    img:hover{
+    img:hover {
       transform: scale(1.2);
     }
   }
 }
 // ----------------------- Personal Section
-
-
-
-
-
 
 // ---------------------------------------------- Button and titles
 #myBtn {
@@ -296,60 +311,66 @@ h3{
   padding: 15px;
   border-radius: 25px;
   filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.15))
-  drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25))
-  drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1))
-  drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.05))
-  drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));
+    drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.05))
+    drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));
 }
-.title{
+.title {
   margin: 0 auto 2em auto;
   color: #666;
   padding-top: 80px;
 }
 // ---------------------------------------------- Footer
-.footline{
+.footline {
   width: calc(100% - 18em);
   margin-top: 5em;
 }
-footer{
-  h2{
+footer {
+  h2 {
     font-weight: 400;
     color: grey;
   }
-  .contact{ 
-    ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  .contact {
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
-    li a{
+    li a {
       padding: 2em;
-      font-family: 'Sanchez', serif;
+      font-family: "Sanchez", serif;
       -webkit-text-stroke: 2px rgba(105, 105, 105, 0.11);
       color: white;
       filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.15))
-      drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25))
-      drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1))
-      drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.05))
-      drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));
+        drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25))
+        drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1))
+        drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.05))
+        drop-shadow(-3px 4px 1px rgba(0, 0, 0, 0.15));
     }
   }
 }
 // ---------------------------------------------- Responsive
-@media (max-width: 890px){
-  header{
+@media (max-width: 890px) {
+  header {
     width: calc(100% - 5em);
-    .head{
-      #home{  font-size: 1.7em;}
-      nav ul {  font-size: 1em;}
+    .head {
+      #home {
+        font-size: 1.7em;
+      }
+      nav ul {
+        font-size: 1em;
+      }
     }
-    .intro{
+    .intro {
       width: 450px;
       margin-top: 18em;
-      h1{  font-size: 4.1em;}
-      p{
+      h1 {
+        font-size: 4.1em;
+      }
+      p {
         width: 400px;
         font-weight: 300;
         font-size: 0.8em;
@@ -357,35 +378,41 @@ footer{
       }
     }
   }
-  .selection{
+  .selection {
     grid-template-columns: 1fr 1fr;
   }
   // #weblogos{
   //   margin: 5em 15% 5em 15%;
   // }
-  .slideshoww .slides{
+  .slideshoww .slides {
     width: 80vw;
     height: 40vh;
   }
 }
-@media (max-width: 660px){
-  header{
+@media (max-width: 660px) {
+  header {
     width: calc(100% - 2em);
-    .head{
-      #home{  font-size: 1.4em;}
-      nav ul {  font-size: 0.8em;}
+    .head {
+      #home {
+        font-size: 1.4em;
+      }
+      nav ul {
+        font-size: 0.8em;
+      }
     }
-    .intro{
+    .intro {
       width: 250px;
       margin-top: 11em;
-      h1{  font-size: 2.2em;}
-      p{
+      h1 {
+        font-size: 2.2em;
+      }
+      p {
         width: 200px;
         font-size: 0.6em;
       }
     }
   }
-  .selection a{
+  .selection a {
     margin-bottom: 0.5em;
     font-size: 1.2em;
   }
