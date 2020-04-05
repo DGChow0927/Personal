@@ -310,8 +310,8 @@ h3 {
 }
 
 .slideshoww .slides {
-  width: 80%;
-  min-height: 700px;
+  width: 70%;
+  min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,7 +321,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 .slideshoww .slides img {
