@@ -310,8 +310,8 @@ h3 {
 }
 
 .slideshoww .slides {
-  width: 70%;
-  min-height: 600px;
+  width: 80%;
+  min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

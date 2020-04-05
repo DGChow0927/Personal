@@ -103,7 +103,7 @@
     <h2 id="print" class="title">Print</h2>
     <div
       class="slideshoww gallery js-flickity"
-      data-flickity-options='{ "freeScroll": true, "wrapAround": true, "draggable": false }'
+      data-flickity-options='{ "freeScroll": true, "wrapAround": true, "draggable": false, "imagesLoaded": true}'
     >
       <div class="gallery-cell slides">
         <img
@@ -228,14 +228,6 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
-    </script>
-    <!-- flickity setup -->
-    <script>
-      let $carousel = $(".slideshoww").flickity({});
-
-      $(window).load(function () {
-        $carousel.flickity("resize");
-      });
     </script>
   </body>
 </html>
