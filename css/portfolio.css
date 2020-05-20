@@ -363,6 +363,25 @@ h3 {
           transform: scale(1.2);
 }
 
+.PersonalP {
+  width: 50%;
+  margin: auto;
+}
+
+.PersonalP img {
+  width: 220px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.PersonalP a img:hover,
+.PersonalP img:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
 #myBtn {
   z-index: 5;
   display: none;

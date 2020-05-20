@@ -293,7 +293,18 @@ h3 {
   }
 }
 // ----------------------- Personal Section
-
+.PersonalP {
+  width: 50%;
+  margin: auto;
+  img {
+    width: 220px;
+    transition: transform 0.5s ease;
+  }
+  a img:hover,
+  img:hover {
+    transform: scale(1.4);
+  }
+}
 // ---------------------------------------------- Button and titles
 #myBtn {
   z-index: 5;
